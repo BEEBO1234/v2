@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Second visual code(project)
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>The family book</h1>
+    <img src="https://i.harperapps.com/covers/9780062914842/y648.jpg" id="ixx">
+    <br>
+    <button onclick="next_image()">Next</button>
+    <script>
+var lin= ["Sameer.jpg","Cookie.jpg","Namratha.jpg","Ravi.jpeg"];
+ var i=0;
+function next_image(){
+   document.getElementById("ixx").src=lin[i];
+   i++;
+   if (i>3){i=0};
+ };
+    </script>
+</body>
+</html>4
